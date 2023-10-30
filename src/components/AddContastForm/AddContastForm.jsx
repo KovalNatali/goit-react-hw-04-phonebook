@@ -14,7 +14,6 @@ const handalCange = (e) => {
     e.target.name === 'number' && setNumber(e.target.value);
   
 };
-
     return ( <Form onSubmit={evt => {
             evt.preventDefault();
             addContast({id: nanoid(5),name, number});

@@ -58,7 +58,6 @@ const getFilterContacts = () => {
   const normalizedFilter = filter.toLowerCase().trim();
   return contacts.filter((contact) => {
     return contact.name.toLowerCase().includes(normalizedFilter)
-
   });
 }
   
@@ -71,7 +70,6 @@ const getFilterContacts = () => {
      <ContactsList 
      contacts={getFilterContacts()}
      onDeleteContact={handleDeleteContact}/>
-  
     </ Container >
   );
 
