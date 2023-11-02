@@ -1,16 +1,17 @@
-import React from 'react'
-import { ContactsListItem } from './ContactsListItem'
+import React from 'react';
+import { ContactsListItem } from './ContactsListItem';
 
-export const ContactsList = ({contacts, onDeleteContact}) => {
- 
+export const ContactsList = ({ contacts, onDeleteContact }) => {
   return (
-    <ul>{contacts.map(contact => (
-    <ContactsListItem key={contact.id} 
-    name={contact.name} 
-    number={contact.number}
-    onDeleteContact={() => onDeleteContact(contact.id)}/>
-    ))}
+    <ul>
+      {contacts.map(contact => (
+        <ContactsListItem
+          key={contact.id}
+          name={contact.name}
+          number={contact.number}
+          onDeleteContact={() => onDeleteContact(contact.id)}
+        />
+      ))}
     </ul>
-  )
-}
-
+  );
+};
